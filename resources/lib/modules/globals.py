@@ -1074,7 +1074,7 @@ class GlobalVariables(object):
             if int(menu_item.get("resume_time", 0)) > 0:
                 params["resume"] = g.UNICODE(menu_item["resume_time"])
                 item.setProperty("resumetime", g.UNICODE(menu_item["resume_time"]))
-                # item.setProperty("totaltime", g.UNICODE(info["duration"]))
+                item.setProperty("totaltime", g.UNICODE(info["duration"]))
         if "play_count" in menu_item and menu_item.get("play_count") is not None:
             info["playcount"] = menu_item["play_count"]
         if "description" in params:
